@@ -8,5 +8,8 @@ suma = 0
 for num in lines:
     suma += float(num)
 
-print(suma)
+if suma.is_integer():
+    print(int(suma))
+else:
+    print(suma)
 
