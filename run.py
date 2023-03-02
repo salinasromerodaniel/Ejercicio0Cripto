@@ -6,7 +6,7 @@ for line in fileinput.input():
 
 suma = 0
 for num in lines:
-    suma += int(num)
+    suma += num
 
 print(suma)
 
