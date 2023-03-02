@@ -9,3 +9,4 @@ for num in lines:
     suma += int(num)
 
 print("La suma total es: ", suma)
+
