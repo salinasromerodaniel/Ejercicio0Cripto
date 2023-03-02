@@ -1,8 +1,11 @@
-n = int(input("¿Cuántos números deseas sumar? "))
-suma = 0.0
+import fileinput
 
-for i in range(n):
-    num = float(input("Introduce el número {}: ".format(i+1)))
-    suma += num
+lines = []
+for line in fileinput.input():
+    lines.append(line)
 
-print("La suma total es: ", suma) #Hola
+suma = 0
+for num in lines:
+    suma += int(num)
+
+print("La suma total es: ", suma)
